@@ -1,0 +1,80 @@
+------> buscar produtos <------
+    entre no no link
+    selecionar GET
+ localhost/product/read.php
+
+
+------> criar produto <------
+    entre no no link
+localhost/product/create.php
+
+selecionar POST
+abra a aba 'body'
+selecione 'raw'
+
+
+//id de categoria
+1 Fashion
+2 Electronics
+3 Motors
+5 Movies
+6 Books
+13 Sports
+
+exemplo de como adicionar
+{
+    "name" : "colocar nome",
+    "price" : "colocar preço",
+    "description" : "colocar descrição",
+    "category_id" : colocar id categoria
+}
+
+
+------> ler um produto <------
+
+localhost/product/read_one.php?id=passar id q quer buscar
+
+selecionar GET
+
+------> atualizar produto <------
+    entre no no link
+localhost/product/update.php
+
+selecionar PUT
+abra a aba 'body'
+selecione 'raw'
+
+
+//id de categoria
+1 Fashion
+2 Electronics
+3 Motors
+5 Movies
+6 Books
+13 Sports
+
+exemplo de como atualizar
+
+passar so parametros q vai atualizar
+{
+    "id" : "colocar id"
+    "name" : "colocar nome",
+    "price" : "colocar preço",
+    "description" : "colocar descrição",
+    "category_id" : colocar id categoria
+}
+
+------> excluir produto <------
+
+localhost/product/delete.php
+
+
+selecionar DELETE
+abra a aba 'body'
+selecione 'raw'
+
+
+passar id que queira deletar
+{
+    "id" : "106"
+}
